@@ -19,7 +19,7 @@ This repository uses a **fork-and-pull-request model**. Follow these steps to en
   ```bash
   git clone https://github.com/<your-username>/<github repo>.git
   ```
-- Navigate to the project directory:
+- Navigate to the project directory (depending in your file system, can be skipped):
   ```bash
   cd umsi-arwhyte
   ```
