@@ -17,10 +17,33 @@ This guide will walk you through installing the UV module on macOS and Windows, 
      ```sh
      brew install uv
      ```
+     - **Alternatively, use `curl` to download the script and execute it:**
+     ```sh
+     curl -LsSf https://astral.sh/uv/install.sh | sh
+     ```
+     - **If your system doesn't have `curl`, use `wget`:**
+     ```sh
+     wget -qO- https://astral.sh/uv/install.sh | sh
+     ```
+     - **To request a specific version, include it in the URL:**
+     ```sh
+     curl -LsSf https://astral.sh/uv/0.5.25/install.sh | sh
+     ```
+    
    - **Windows (Scoop):**
      ```sh
      scoop install uv
      ```
+     - **Use irm to download the script and execute it with iex:**
+     
+     ```sh
+     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+     ```
+     - **To request a specific version, include it in the URL:**
+     ```sh
+     powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/0.5.25/install.ps1 | iex"
+     ```
+     
 3. Verify the installation:
    ```sh
    uv --version
